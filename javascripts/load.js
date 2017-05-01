@@ -17,3 +17,4 @@ var Chatty = (function(originalChatty) {
       dataRequest.send();
   }
 });
+
