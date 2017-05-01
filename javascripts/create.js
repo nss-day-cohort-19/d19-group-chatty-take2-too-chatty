@@ -1,13 +1,13 @@
 
 
 
-const inputArea = document.getElementById('inputArea')
-const messageBoard = document.getElementById('messageBoard');
+// const inputArea = document.getElementById('inputArea')
+// const messageBoard = document.getElementById('messageBoard');
 const newMessages = [];
 function createMessage(argument) {
 	newMessages.push(inputArea.value);
 	const par = document.createElement('p')
-	par.textContent = newMessages;
+	par.textContent = inputArea.value;
 	const btn = document.createElement('button');
 	btn.textContent = 'Remove';
 	par.appendChild(btn);
