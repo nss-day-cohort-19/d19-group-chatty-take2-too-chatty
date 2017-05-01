@@ -11,27 +11,31 @@
 		<div id="inputName">
 			<nav class="navbar navbar-default navbar-fixed-top">
 				<div class="container">
-					<input type="text" id="inputArea">
-					<button id="navClear">Clear</button>
-					<div id="checkboxes">
+					<div class="row">
+						<div class="col-md-2 col-sm-2">LOGO</div>
+						<div class="col-md-6 col-sm-6">
+							<input type="text" id="inputArea" placeholder="Enter message">
+						</div>
+						<div class="col-md-4 col-sm-4">
+							<button id="navClear">Clear Message Board</button>
+						</div>
+					</div>
+					<div id="checkboxes" class="checkboxes">
 						Dark Theme <input type="checkbox" id="dark">
 						Large Text <input type="checkbox" id="large">
 					</div>
 				</div>
 			</nav>
 		</div>
+		</div>
 	</div>
 
 </div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 </header>
-
-<div id="messageBoard"></div>
+<div class="message-board-container">
+		<p>Messages:</p>
+	<div id="messageBoard"></div>
+</div>
 
 
 <script type="text/javascript" src="javascripts/main.js"></script>
@@ -41,4 +45,3 @@
 
 </body>
 </html>
-
