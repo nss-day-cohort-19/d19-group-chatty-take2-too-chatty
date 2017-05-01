@@ -1,8 +1,8 @@
 
 
 
-const inputArea = document.getElementById('inputArea')
-const messageBoard = document.getElementById('messageBoard');
+// const inputArea = document.getElementById('inputArea')
+// const messageBoard = document.getElementById('messageBoard');
 const newMessages = [];
 function createMessage(argument) {
 	newMessages.push(inputArea.value);
@@ -39,4 +39,3 @@ var Chatty = (function(originalChatty){
 	}
 	return originalChatty
 })(Chatty || {});
-
