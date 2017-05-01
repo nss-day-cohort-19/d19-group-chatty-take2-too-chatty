@@ -16,4 +16,5 @@ var Chatty = (function(originalChatty) {
       dataRequest.open("GET", "messages.json");
       dataRequest.send();
   }
+  return originalChatty
 }(Chatty || {}));

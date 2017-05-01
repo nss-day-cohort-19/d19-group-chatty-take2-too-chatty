@@ -34,4 +34,4 @@ large.addEventListener("click", function(){
 	console.log("shit is large now.")
 })
 
-//will need to create a delete function that will delete each seperate msg
+//will need to create a delete function that will delete each seperate ms

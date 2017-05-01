@@ -4,6 +4,7 @@ var Chatty = (function (originalChatty) {
 	originalChatty.deleteFromDom = function (id) {
 		id.parentNode.removeChild(id);
 	};
-	Chatty.removeFromArray(num);
+	//Chatty.removeFromArray(msgNum);
+	return originalChatty
 }(Chatty || {}));
 
