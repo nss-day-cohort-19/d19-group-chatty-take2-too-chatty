@@ -1,1 +1,17 @@
-["Are you a parking ticket? Cause you've got fine written all over you", "Do you live in a cornfield? Cause I'm stalking you", "Do you know what my shirt is made of? Boyfriend material", "Does your left eye hurt? Because you've been looking right all day", "Are you my appendix? Because I don't understand how you work, but this feeling makes me wanna take you out"]
+[
+  {
+    "pickup1":"Are you a parking ticket? Cause you've got fine written all over you"
+  },
+  {
+    "pickup2": "Do you live in a cornfield? Cause I'm stalking you"
+  },
+  {
+    "pickup3": "Do you know what my shirt is made of? Boyfriend material"
+  },
+  {
+    "pickup4": "Does your left eye hurt? Because you've been looking right all day"
+  },
+  {
+    "pickup5": "Are you my appendix? Because I don't understand how you work, but this feeling makes me wanna take you out"
+  }
+]
