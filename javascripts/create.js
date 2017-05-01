@@ -1,3 +1,6 @@
+
+
+
 const inputArea = document.getElementById('inputArea')
 const messageBoard = document.getElementById('messageBoard');
 const newMessages = [];
@@ -29,3 +32,11 @@ messageBoard.addEventListener('click', (e) => {
     }
   }
 });
+
+
+var Chatty = (function(originalChatty){
+	originalChatty.removeFromArray = function(){
+	}
+	return originalChatty
+})(Chatty || {});
+
