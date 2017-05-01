@@ -7,7 +7,7 @@ const newMessages = [];
 function createMessage(argument) {
 	newMessages.push(inputArea.value);
 	const par = document.createElement('p')
-	par.textContent = newMessages;
+	par.textContent = inputArea.value;
 	const btn = document.createElement('button');
 	btn.textContent = 'Remove';
 	par.appendChild(btn);
