@@ -32,17 +32,18 @@ msgBoard.addEventListener('click', (e) => {
 		Chatty.deleteFromDom(e.target)
 });
 
-dark.addEventListener("click", function(checked){
-	//toggle class if checked
+dark.addEventListener("click", () =>{
 	console.log("shit is dark");
 });
 
 
-large.addEventListener("click", function(){
+large.addEventListener("click", () =>{
 	//toggle class if checked
 	console.log("shit is large now.")
 });
 
 
 
-//will need to create a delete function that will delete each seperate ms
+
+
+
