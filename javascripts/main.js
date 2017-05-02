@@ -14,6 +14,7 @@ var large = document.getElementById("large");
 inputArea.addEventListener("keypress", function(event){
 	//add input text to message board
 	if(event.keyCode === 13){
+		Chatty.createMessage()
 	console.log("god damn keypress works");
 	}
 });
@@ -21,6 +22,11 @@ inputArea.addEventListener("keypress", function(event){
 navClear.addEventListener("click", function(event){
 	//clear from div, array and DOM
 	console.log("stupid clear button works");
+});
+
+
+msgBoard.addEventListener('click', (e) => {
+		Chatty.deleteFromDom(e.target)
 });
 
 dark.addEventListener("click", function(checked){
