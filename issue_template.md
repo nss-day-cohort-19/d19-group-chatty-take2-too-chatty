@@ -1,19 +1,23 @@
 ## Expected Behavior
-- New user input prints to DOM(resolved).
-- Input is removed from both DOM and array when "remove" button is clicked.
-- JSON file loads to DOM
+- 1. New user input prints to DOM(resolved).
+- 2. Input is removed from both DOM and array when "remove" button is clicked (resolved).
+- 3. JSON file loads to DOM.
+- 4. Scroll added to div when messages overflow within div.
 
 ## Actual Behavior
-- Input prints to DOM, but compounds with previous input despite being cleared (resolved).
-- New user input prints to DOM and is added to array, but is not removed from array when checked in console.
-- JSON not loading to DOM.
+- 1. Input prints to DOM, but compounds with previous input despite being cleared (resolved).
+- 2. New user input prints to DOM and is added to array, but is not removed from array when checked in console.
+- 3. JSON not loading to DOM.
+- 4. Messages overflow.
 
 ## Steps to Reproduce Behavior
-- Follow Code
-- Figure out way to call function when page loads.
+- 1. Follow Code
+- 2. Figure out way to call function when page loads.
+- 3. n/a
 
 ## Module Suspected / Relevant Files
--Shared variables(resolved).
+- 1. Shared variables(resolved).
+
 
 ## Related Issues
 -Input added to array and not removed after clicking remove button.
