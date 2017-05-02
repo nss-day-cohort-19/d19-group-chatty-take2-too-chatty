@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  padding-top: 80px;
+  padding-top: 180px;
 }
 
 .container {
@@ -11,6 +11,11 @@ body {
 
 input[type=text] {
   width: 100%;
+  margin-top: 40px;
+}
+
+#navClear {
+  margin-top: 40px;
 }
 
 .checkboxes {
