@@ -36,8 +36,16 @@ var Chatty = (function (originalChatty) {
 //   }
 // });
 
-	originalChatty.removeFromArray = function(){
+	originalChatty.removeFromArray = function(msgText){
+		console.log(msgText);
+		for (var i = 0; i < newMessages.length; i++){
+			if (newMessages[i] === msgText){
+				newMessages.splice(i, 1);
+				break;
+			}
+		}
 	}
+
 	return originalChatty
 
 }(Chatty || {}));

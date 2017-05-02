@@ -3,10 +3,13 @@ console.log("remove.js");
 var Chatty = (function (originalChatty) {
 	originalChatty.deleteFromDom = function (id) {
 		if (id.tagName === "BUTTON"){
-			id.parentNode.parentNode.removeChild(id.parentNode);
+			var toArray = id.parentNode.parentNode.removeChild(id.parentNode);
+			console.log(toArray);
+			id.parentNode.removeChild(id);
+			Chatty.removeFromArray(toArray.textContent);
 	}
 	};
-	//Chatty.removeFromArray(msgNum);
+	
 	return originalChatty
 }(Chatty || {}));
 
