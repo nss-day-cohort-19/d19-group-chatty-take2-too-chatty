@@ -9,12 +9,32 @@ var Chatty = (function(originalChatty) {
         console.log("Pickup line data has LOADED");
         var pickupLines = JSON.parse(event.target.responseText);
         console.log("pickup lines", pickupLines);
+
+        showPickupLines(pickupLines);
       }
+
+      function showPickupLines(e) {
+        var preloadData = [];
+            for (prop in e){
+                var PickupItems = e[prop];
+                preloadData.push(PickupItems.pickup)
+                const par = document.createElement('p')
+                par.textContent = PickupItems.pickup;
+                const btn = document.createElement('button');
+                btn.textContent = 'Remove';
+                par.appendChild(btn);
+                console.log(par);
+                msgBoard.appendChild(par);
+                // return par;
+              }
+      }
+
       function dataRequestError(event){
         console.log("Pickup line data has error");
       }
       dataRequest.open("GET", "messages.json");
       dataRequest.send();
+
   }
   return originalChatty
 }(Chatty || {}));
