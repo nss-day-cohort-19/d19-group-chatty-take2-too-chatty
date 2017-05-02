@@ -10,6 +10,9 @@ var dark = document.getElementById("dark");
 var large = document.getElementById("large");
 
 //event listeners-- not complete
+window.addEventListener("load", function(event) {
+	Chatty.loadJSON(event)
+})
 
 inputArea.addEventListener("keypress", function(event){
 	//add input text to message board
@@ -38,6 +41,8 @@ dark.addEventListener("click", function(checked){
 large.addEventListener("click", function(){
 	//toggle class if checked
 	console.log("shit is large now.")
-})
+});
+
+
 
 //will need to create a delete function that will delete each seperate ms
