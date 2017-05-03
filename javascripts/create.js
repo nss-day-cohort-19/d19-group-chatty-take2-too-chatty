@@ -6,7 +6,8 @@ var Chatty = (function (originalChatty) {
 		if (inputArea.value != ""){
 			newMessages.push(inputArea.value);
 			const par = document.createElement('p')
-			par.textContent = inputArea.value;
+			var timeStamp = document.lastModified;
+			par.textContent = inputArea.value + " " + timeStamp;
 			const btn = document.createElement('button');
 			btn.textContent = 'Remove';
 			par.appendChild(btn);
