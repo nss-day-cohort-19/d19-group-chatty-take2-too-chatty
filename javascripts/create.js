@@ -1,6 +1,3 @@
-
-
-
 // const inputArea = document.getElementById('inputArea')
 // const messageBoard = document.getElementById('messageBoard');
 var newMessages = [];
@@ -21,7 +18,7 @@ var Chatty = (function (originalChatty) {
 	}
 
 // document.addEventListener('keypress', (e) => {
-	
+
 // 	}
 // });
 
