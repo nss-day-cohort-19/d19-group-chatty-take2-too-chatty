@@ -3,7 +3,7 @@
 
 // const inputArea = document.getElementById('inputArea')
 // const messageBoard = document.getElementById('messageBoard');
-const newMessages = [];
+var newMessages = [];
 var Chatty = (function (originalChatty) {
 	originalChatty.createMessage = function() {
 		if (inputArea.value != ""){
@@ -42,6 +42,10 @@ var Chatty = (function (originalChatty) {
 			if (newMessages[i] === msgText){
 				newMessages.splice(i, 1);
 				break;
+			}
+			else if (msgText.target.id == "navClear"){
+				newMessages = []
+				console.log(msgText)
 			}
 		}
 	}
