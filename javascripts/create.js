@@ -6,10 +6,15 @@ var Chatty = (function (originalChatty) {
 		if (inputArea.value != ""){
 			newMessages.push(inputArea.value);
 			const par = document.createElement('p')
+			const span = document.createElement('span');
 			var timeStamp = document.lastModified;
-			par.textContent = inputArea.value + " " + timeStamp;
+		    span.textContent = inputArea.value + " " + timeStamp;
+			par.appendChild(span);
 			const btn = document.createElement('button');
 			btn.textContent = 'Remove';
+			const editButton = document.createElement('button');
+			editButton.textContent = 'edit';
+			par.appendChild(editButton);
 			par.appendChild(btn);
 			msgBoard.appendChild(par);
 			inputArea.value = '';
