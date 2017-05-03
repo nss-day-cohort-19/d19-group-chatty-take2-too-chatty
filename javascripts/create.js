@@ -10,7 +10,6 @@ var Chatty = (function (originalChatty) {
 			const btn = document.createElement('button');
 			btn.textContent = 'Remove';
 			par.appendChild(btn);
-			console.log(par);
 			msgBoard.appendChild(par);
 			inputArea.value = '';
 			return par;
