@@ -1,6 +1,3 @@
-
-
-
 // const inputArea = document.getElementById('inputArea')
 // const messageBoard = document.getElementById('messageBoard');
 var newMessages = [];
@@ -21,7 +18,7 @@ var Chatty = (function (originalChatty) {
 	}
 
 // document.addEventListener('keypress', (e) => {
-	
+
 // 	}
 // });
 
@@ -39,13 +36,15 @@ var Chatty = (function (originalChatty) {
 	originalChatty.removeFromArray = function(msgText){
 		console.log(msgText);
 		for (var i = 0; i < newMessages.length; i++){
-			if (newMessages[i] === msgText){
+			if (newMessages[i] === msgText.textContent){
 				newMessages.splice(i, 1);
+				console.log("removed")
 				break;
 			}
-			else if (msgText.target.id == "navClear"){
-				newMessages = []
-				console.log(msgText)
+			else if (msgText.innerHTML === "Clear Message Board"){
+				newMessages = [];
+				console.log(msgText);
+				break;
 			}
 		}
 	}

@@ -6,7 +6,7 @@ var Chatty = (function (originalChatty) {
 			var toArray = id.parentNode.parentNode.removeChild(id.parentNode);
 			console.log(toArray);
 			id.parentNode.removeChild(id);
-			Chatty.removeFromArray(toArray.textContent);
+			Chatty.removeFromArray(toArray);
 	}
 	};
 	
