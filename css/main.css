@@ -183,6 +183,17 @@ button {
   color: white;
 }
 
+.fire-image {
+  background: url("../fire.jpeg");
+              background-size: cover;
+}
+
+.fire-image button {
+  background-color: rgb(244, 195, 24);
+  color: white;
+  border: none;
+}
+
 .fire p {
   color: white;
 }
@@ -190,18 +201,27 @@ button {
 .fire label {
   color: white;
 }
-
 .fire button {
   background-color: rgb(244, 195, 24);
   color: white;
   border: none;
 }
 
+
 .nature {
   background-color: rgb(73, 98, 75);
   color: white;
 }
+.nature-image {
+  background: url("../nature.jpeg");
+              background-size: cover;
+}
 
+.nature-image button {
+  background-color: rgb(205, 228, 205);
+  color: black;
+  border: none;
+}
 .nature p {
   color: white;
 }
