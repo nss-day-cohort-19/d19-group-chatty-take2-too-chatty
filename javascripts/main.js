@@ -10,6 +10,8 @@ var dark = document.getElementById("dark");
 var large = document.getElementById("large");
 var mainContent = document.getElementById("main-content");
 var timeStamp = document.lastModified;
+var fireButton = document.getElementById("fire");
+var natureButton = document.getElementById("nature")
 
 console.log(timeStamp);
 
@@ -55,3 +57,5 @@ large.addEventListener("click", (e) =>{
 	}
 	console.log("shit is large.");
 });
+
+//event listener to save button in modal to determine which radio button is selected and toggle classes to page
