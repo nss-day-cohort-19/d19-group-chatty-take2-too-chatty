@@ -13,19 +13,20 @@ var Chatty = (function(originalChatty) {
       console.log("pickup lines", pickupLines);
       showPickupLines(pickupLines);
     }
-
+      
     function showPickupLines(e) {
       var preloadData = [];
           for (prop in e){
               var PickupItems = e[prop];
+              var timeStamp = document.lastModified;
               preloadData.push(PickupItems.pickup)
               const par = document.createElement('p')
-              par.textContent = PickupItems.pickup;
+              par.textContent = PickupItems.pickup + " " + timeStamp;
               const btn = document.createElement('button');
               btn.textContent = 'Remove';
               par.appendChild(btn);
               msgBoard.appendChild(par);
-          }
+            }
     }
 
     function dataRequestError(event){

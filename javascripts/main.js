@@ -16,15 +16,15 @@ window.addEventListener("load", function(event) {
 	Chatty.loadJSON(event);
 });
 
+//add input text to message board
 inputArea.addEventListener("keypress", function(event){
-	//add input text to message board
 	if(event.keyCode === 13){
 		Chatty.createMessage();
 	}
 });
 
+//clear from div, array and DOM
 navClear.addEventListener("click", function(event){
-	//clear from div, array and DOM
 	msgBoard.innerHTML = '';
 	Chatty.removeFromArray(event.target)
 });
