@@ -19,7 +19,6 @@ var Chatty = (function (originalChatty) {
 	}
 
 	originalChatty.removeFromArray = function(msgText){
-		console.log(msgText);
 		for (var i = 0; i < newMessages.length; i++){
 			if (newMessages[i] === msgText.textContent){
 				newMessages.splice(i, 1);
