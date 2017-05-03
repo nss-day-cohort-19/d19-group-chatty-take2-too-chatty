@@ -11,7 +11,9 @@ var large = document.getElementById("large");
 var mainContent = document.getElementById("main-content");
 var timeStamp = document.lastModified;
 var fireButton = document.getElementById("fire");
-var natureButton = document.getElementById("nature")
+var natureButton = document.getElementById("nature");
+var saveButton = document.getElementById("save-button");
+var header = document.getElementById("header");
 
 //event listeners
 window.addEventListener("load", function(event) {
@@ -53,3 +55,28 @@ large.addEventListener("click", (e) =>{
 });
 
 //event listener to save button in modal to determine which radio button is selected and toggle classes to page
+saveButton.addEventListener('click', function() {
+	console.log("save button clicked");
+	var selected;
+	var radios = document.getElementsByName("theme");
+	for(var i = 0; i < radios.length; i++) {
+		if (radios[i].checked) {
+			selected = radios[i].value;
+			break;
+		}
+	}
+	if (selected == 0) {
+		mainContent.classList.remove("nature")
+		mainContent.classList.add("fire");
+		header.classList.remove("nature")
+		header.classList.add("fire");
+	} else if (selected == 1) {
+		mainContent.classList.add("nature");
+		header.classList.add("nature");
+	} else if (selected == 2) {
+		mainContent.classList.remove("fire");
+		mainContent.classList.remove("nature");
+		header.classList.remove("fire");
+		header.classList.remove("nature");
+	}
+});

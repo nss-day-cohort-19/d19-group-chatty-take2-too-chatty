@@ -196,3 +196,22 @@ button {
   color: white;
   border: none;
 }
+
+.nature {
+  background-color: rgb(73, 98, 75);
+  color: white;
+}
+
+.nature p {
+  color: white;
+}
+
+.nature label {
+  color: white;
+}
+
+.nature button {
+  background-color: rgb(205, 228, 205);
+  color: black;
+  border: none;
+}
