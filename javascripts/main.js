@@ -8,8 +8,12 @@ var inputArea = document.getElementById("inputArea");
 var newLine = document.getElementById("inputArea").value;
 var dark = document.getElementById("dark");
 var large = document.getElementById("large");
+var timeStamp = document.lastModified;
 
-//event listeners-- not complete
+console.log(timeStamp);
+
+
+//event listeners
 window.addEventListener("load", function(event) {
 	Chatty.loadJSON(event);
 });
@@ -29,13 +33,13 @@ navClear.addEventListener("click", function(event){
 	console.log("stupid clear button works", event.target.id);
 });
 
-
+//delete individual messages
 msgBoard.addEventListener('click', (e) => {
 		Chatty.deleteFromDom(e.target);
 });
 
+//toggle dark theme
 dark.addEventListener("click", (e) =>{
-	//toggle dark class if checked
 	var darkTheme = dark.value
 	if(darkTheme == "dark"){
 		msgBoard.classList.toggle("dark");
@@ -43,9 +47,8 @@ dark.addEventListener("click", (e) =>{
 	console.log("shit is dark");
 });
 
-
+//toggle large theme
 large.addEventListener("click", (e) =>{
-	//toggle large class if checked
 	var lgTheme = large.value;
 	if(lgTheme == "large"){
 		msgBoard.classList.toggle("large");
