@@ -11,38 +11,47 @@ var large = document.getElementById("large");
 
 //event listeners-- not complete
 window.addEventListener("load", function(event) {
-	Chatty.loadJSON(event)
-})
+	Chatty.loadJSON(event);
+});
 
 inputArea.addEventListener("keypress", function(event){
 	//add input text to message board
 	if(event.keyCode === 13){
-		Chatty.createMessage()
+		Chatty.createMessage();
 	console.log("god damn keypress works");
 	}
 });
 
 navClear.addEventListener("click", function(event){
 	//clear from div, array and DOM
-	console.log("stupid clear button works");
+	msgBoard.innerHTML = '';
+	Chatty.removeFromArray(event)
+	console.log("stupid clear button works", event.target.id);
 });
 
 
 msgBoard.addEventListener('click', (e) => {
-		Chatty.deleteFromDom(e.target)
+		Chatty.deleteFromDom(e.target);
 });
 
-dark.addEventListener("click", () =>{
+dark.addEventListener("click", (e) =>{
+	//toggle dark class if checked
+	var darkTheme = dark.value
+	if(darkTheme == "dark"){
+		msgBoard.classList.toggle("dark");
+	}
 	console.log("shit is dark");
 });
 
 
-large.addEventListener("click", () =>{
-	//toggle class if checked
-	console.log("shit is large now.")
+large.addEventListener("click", (e) =>{
+	//toggle large class if checked
+	var lgTheme = large.value;
+	if(lgTheme == "large"){
+		msgBoard.classList.toggle("large");
+	}
+	console.log("shit is large.");
 });
-
-
 
 
 
