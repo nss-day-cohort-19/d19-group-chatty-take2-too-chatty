@@ -68,15 +68,15 @@ saveButton.addEventListener('click', function() {
 	if (selected == 0) {
 		mainContent.classList.remove("nature")
 		mainContent.classList.add("fire");
-		header.classList.remove("nature")
-		header.classList.add("fire");
+		header.classList.remove("nature-image");
+		header.classList.add("fire-image");
 	} else if (selected == 1) {
 		mainContent.classList.add("nature");
-		header.classList.add("nature");
+		header.classList.add("nature-image");
 	} else if (selected == 2) {
 		mainContent.classList.remove("fire");
 		mainContent.classList.remove("nature");
-		header.classList.remove("fire");
-		header.classList.remove("nature");
+		header.classList.remove("fire-image");
+		header.classList.remove("nature-image");
 	}
 });
