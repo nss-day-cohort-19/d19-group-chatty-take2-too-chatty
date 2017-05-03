@@ -8,6 +8,7 @@ var inputArea = document.getElementById("inputArea");
 var newLine = document.getElementById("inputArea").value;
 var dark = document.getElementById("dark");
 var large = document.getElementById("large");
+var mainContent = document.getElementById("main-content");
 var timeStamp = document.lastModified;
 
 console.log(timeStamp);
@@ -41,7 +42,7 @@ msgBoard.addEventListener('click', (e) => {
 dark.addEventListener("click", (e) =>{
 	var darkTheme = dark.value
 	if(darkTheme == "dark"){
-		msgBoard.classList.toggle("dark");
+		mainContent.classList.toggle("dark");
 	}
 	console.log("shit is dark");
 });
@@ -54,7 +55,3 @@ large.addEventListener("click", (e) =>{
 	}
 	console.log("shit is large.");
 });
-
-
-
-
