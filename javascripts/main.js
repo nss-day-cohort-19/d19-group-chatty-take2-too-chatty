@@ -24,7 +24,9 @@ inputArea.addEventListener("keypress", function(event){
 
 navClear.addEventListener("click", function(event){
 	//clear from div, array and DOM
-	console.log("stupid clear button works");
+	msgBoard.innerHTML = '';
+	Chatty.removeFromArray(event)
+	console.log("stupid clear button works", event.target.id);
 });
 
 
