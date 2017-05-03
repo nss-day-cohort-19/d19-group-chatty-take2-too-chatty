@@ -18,7 +18,6 @@ var Chatty = (function(originalChatty) {
       var preloadData = [];
           for (prop in e){
               var PickupItems = e[prop];
-              var timeStamp = document.lastModified;
               preloadData.push(PickupItems.pickup)
               const par = document.createElement('p')
               par.textContent = PickupItems.pickup + " " + timeStamp;
