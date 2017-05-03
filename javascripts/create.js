@@ -20,8 +20,6 @@ var Chatty = (function (originalChatty) {
 			inputArea.value = '';
 			return par;
 		}
-		else{
-		}
 	}
 
 	originalChatty.removeFromArray = function(msgText){
