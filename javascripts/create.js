@@ -1,7 +1,7 @@
 console.log("create.js");
-
+var newMessages = [];
 var Chatty = (function (originalChatty) {
-	var newMessages = [];
+	
 	originalChatty.createMessage = function() {
 		if (inputArea.value != ""){
 			newMessages.push(inputArea.value);

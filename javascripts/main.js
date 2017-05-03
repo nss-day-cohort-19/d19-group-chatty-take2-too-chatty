@@ -26,13 +26,15 @@ window.addEventListener("load", function(event) {
 inputArea.addEventListener("keypress", function(event){
 	if(event.keyCode === 13){
 		Chatty.createMessage();
+		navClear.removeAttribute("disabled")
 	}
 });
 
 //clear from div, array and DOM
 navClear.addEventListener("click", function(event){
-	msgBoard.innerHTML = '';
+	msgBoard.innerHTML = ''
 	Chatty.removeFromArray(event.target)
+	navClear.setAttribute("disabled", true)
 });
 
 //delete individual messages
