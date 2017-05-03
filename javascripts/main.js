@@ -18,15 +18,14 @@ inputArea.addEventListener("keypress", function(event){
 	//add input text to message board
 	if(event.keyCode === 13){
 		Chatty.createMessage();
-	console.log("god damn keypress works");
 	}
 });
 
 navClear.addEventListener("click", function(event){
 	//clear from div, array and DOM
 	msgBoard.innerHTML = '';
-	Chatty.removeFromArray(event)
-	console.log("stupid clear button works", event.target.id);
+	Chatty.removeFromArray(event.target)
+	console.log("stupid clear button works", event.target);
 });
 
 
