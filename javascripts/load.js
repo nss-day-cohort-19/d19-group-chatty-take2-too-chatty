@@ -13,7 +13,7 @@ var Chatty = (function(originalChatty) {
       console.log("pickup lines", pickupLines);
       showPickupLines(pickupLines);
     }
-      
+
     function showPickupLines(e) {
       var preloadData = [];
           for (prop in e){
