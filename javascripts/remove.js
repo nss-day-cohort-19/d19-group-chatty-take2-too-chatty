@@ -7,8 +7,8 @@ var Chatty = (function (originalChatty) {
 			console.log(toArray);
 			id.parentNode.removeChild(id);
 			Chatty.removeFromArray(toArray);
+		}
 	}
-	};
 	
 	return originalChatty
 }(Chatty || {}));
