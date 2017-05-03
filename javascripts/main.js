@@ -9,9 +9,11 @@ var newLine = document.getElementById("inputArea").value;
 var dark = document.getElementById("dark");
 var large = document.getElementById("large");
 var mainContent = document.getElementById("main-content");
-var timeStamp = document.lastModified;
+var timeStamp = new Date();
 var fireButton = document.getElementById("fire");
 var natureButton = document.getElementById("nature")
+
+console.log("timeStamp", timeStamp);
 
 //event listeners
 window.addEventListener("load", function(event) {

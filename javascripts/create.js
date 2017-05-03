@@ -7,7 +7,6 @@ var Chatty = (function (originalChatty) {
 			newMessages.push(inputArea.value);
 			const par = document.createElement('p')
 			const span = document.createElement('span');
-			var timeStamp = document.lastModified;
 		    span.textContent = inputArea.value + " " + timeStamp;
 			par.appendChild(span);
 			const btn = document.createElement('button');
