@@ -2,43 +2,43 @@
 <html>
 <head>
 	<title>Chatty Pick Up Lines</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
 	<link id="style" rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
+	<div class="wrapper">
+
 <header>
-	<div id="navbar">
-		<div id="inputName">
-			<nav class="navbar navbar-default navbar-fixed-top">
-				<div class="container-fluid container">
-					<div class="row">
-						<div class="col-md-2 col-sm-2 col-xs-2"><img src="logo-chatty.png" id="logo" width=170 height=130/></div>
-						<div class="col-md-6 col-sm-6 col-xs-4">
-							<input type="text" id="inputArea" placeholder="Enter message">
-						</div>
-						<div class="col-md-4 col-sm-4 col-xs-5">
-							<button id="navClear">Clear Message Board</button>
-						</div>
-					</div>
-					<div id="checkboxes" class="checkboxes">
-						Dark Theme <input type="checkbox" id="dark" value="dark">
-						Large Text <input type="checkbox" id="large" value="large">
-					</div>
-				</div>
+	<div class="main-heading">
+		<h6>The</h6>
+		<h3>Function</h3>
+		<h6>Of</h6>
+		<h1>Seduction</h1>
+			<nav id="navbar">
+				<ul>
+					<li>
+						<input type="text" id="inputArea" placeholder="Enter message">
+					</li>
+					<li>
+						<button id="navClear">Clear Message Board</button>
+					</li>
+				</ul>
 			</nav>
-		</div>
-		</div>
-	</div>
-
-</div>
+  </div>
 </header>
-<div class="message-board-container">
-		<h4>Messages:</h4>
-		<div id="box">
-			<div id="messageBoard" class="dark" class="large"></div>
-		</div>
+  <div id="main-content" class="dark">
+	<div id="checkboxes" class="checkboxes">
+		<label>Dark Theme</label><input type="checkbox" id="dark">
+		<label>Large Text</label><input type="checkbox" id="large">
+	</div>
+	<div class="message-board-container">
+			<p>Messages:</p>
+			<div id="box">
+				<div id="messageBoard"></div>
+			</div>
+	</div>
 </div>
-
+</div>
 
 <script type="text/javascript" src="javascripts/main.js"></script>
 <script type="text/javascript" src="javascripts/load.js"></script>
