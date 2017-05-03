@@ -133,25 +133,22 @@ button {
 }
 
 /*dark theme*/
-/*.dark {
+.dark {
   background-color: rgb(12, 27, 55);
   color: white;
 }
 
-/*.dark p {
+.dark p {
   color: white;
 }
 
 .dark label {
   color: white;
-}*/
+}
 
 
 /*large theme*/
 
-/*.large {
-  margin: 0;
-  padding-top: 80px;
-  background-color: #6E7783;
-  font-size: 1.25em;
-}*/
+.large {
+  font-size: 1.5em;
+}
