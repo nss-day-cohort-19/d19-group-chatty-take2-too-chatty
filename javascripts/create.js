@@ -1,5 +1,3 @@
-console.log("create.js");
-
 var Chatty = (function (originalChatty) {
 	var newMessages = [];
 	originalChatty.createMessage = function() {
@@ -15,7 +13,7 @@ var Chatty = (function (originalChatty) {
 			editButton.textContent = 'edit';
 			par.appendChild(editButton);
 			par.appendChild(btn);
-			msgBoard.appendChild(par);
+			$("#messageBoard")[0].appendChild(par);
 			inputArea.value = '';
 			return par;
 		}

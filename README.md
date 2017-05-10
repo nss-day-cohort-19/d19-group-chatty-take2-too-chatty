@@ -1,3 +1,6 @@
+
+# Chatty Revisited - Create your own branch from your group project and use jQuery for all XHRs, DOM querying & manipulation, and CSS manipulation.
+
 # Chatty Group Project
 
 ## Setup
